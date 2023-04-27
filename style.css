@@ -1,0 +1,78 @@
+ /*INDEX*/
+ header {
+     margin: 0px 5px;
+     padding: 10px;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: stretch;
+     background-color: #f8f4f4;
+     /* Cambia este valor por el color que desees */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+     /* Establece el sombreado */
+
+
+ }
+
+ #image_log {
+     width: 100px;
+     margin: 10px 0px 10px 0px;
+
+ }
+
+ .input_search {
+     width: 150px;
+     margin: 17px;
+     border-radius: 5px;
+     border: 2px solid #083d10;
+
+
+ }
+
+
+ nav {
+     text-align: right;
+ }
+
+ .ul_nav {
+     margin: 20px 0px 0px 10px;
+
+ }
+
+ .link_nav {
+     margin: 5px 0px 0px 0px;
+     display: inline;
+     list-style-type: none;
+     padding: 10px;
+     color: black;
+
+ }
+
+ nav a {
+     font-size: 12px;
+     text-decoration: none;
+     color: #083d10;
+ }
+
+ nav a:hover {
+     color: #c78c19;
+ }
+
+ .boxiconsFcIg {
+     /*lo esta aplicando a los iconos de la barra de navegación esta es la caja de los iconos*/
+     width: 100px;
+     margin: 20px 0px 0px 0px;
+
+ }
+
+ div a {
+     /*Esto esta siendo aplicado a los iconos de facebook e instagram de la barra de navegacion osea a la etiqueta <div> en donde se encuentra la etiqueta <a>*/
+     text-decoration: none;
+     list-style-type: none;
+     color: black;
+ }
+
+ div a:hover {
+     /*Esta siendo aplicada en la etiqueta <a> que esta dentro del contendor <div> donde estan los iconos de la barra de navegación Fc e Ig*/
+     color: #c78c19;
+ }
