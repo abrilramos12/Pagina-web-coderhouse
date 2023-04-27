@@ -45,11 +45,12 @@
      list-style-type: none;
      padding: 10px;
      color: black;
+     
 
  }
 
  nav a {
-     font-size: 12px;
+     font-size: 15px;
      text-decoration: none;
      color: #083d10;
  }
