@@ -45,12 +45,12 @@
      list-style-type: none;
      padding: 10px;
      color: black;
-     
+
 
  }
 
  nav a {
-     font-size: 15px;
+     font-size: 12px;
      text-decoration: none;
      color: #083d10;
  }
@@ -76,4 +76,46 @@
  div a:hover {
      /*Esta siendo aplicada en la etiqueta <a> que esta dentro del contendor <div> donde estan los iconos de la barra de navegación Fc e Ig*/
      color: #c78c19;
+ }
+
+ /*Main-index*/
+
+
+
+ .main-title {
+     /*Titulo principal del main*/
+     font-size: 50px;
+     margin: 10px 5px 0px;
+     text-align: center;
+
+ }
+
+ .div_articule {
+
+     display: flex;
+     justify-content: flex-start;
+     align-items: stretch;
+     flex-wrap: wrap;
+
+
+
+ }
+
+ .main_articule {
+     width: 250px;
+     margin: 10px 0px 0px 40px;
+     padding: 2px;
+     border: #083d10 solid 2px;
+     border-radius: 10px;
+
+
+ }
+
+ .image-business {
+     /*imagen del negocio*/
+     width: 100%;
+ }
+
+ .articule-paragraph {
+     margin: 20px 0px 0px
  }
