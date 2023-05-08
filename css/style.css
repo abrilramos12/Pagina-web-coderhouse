@@ -1,12 +1,15 @@
  /*INDEX*/
+
+ /* Barra de navegación */
  header {
      margin: 0px 5px;
      padding: 10px;
      width: 100%;
+     height: 100%;
      display: flex;
      justify-content: space-between;
-     align-items: stretch;
-   
+     align-items: normal;
+
      background-color: #f8f4f4;
      /* Cambia este valor por el color que desees */
      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -15,7 +18,15 @@
 
  }
 
- #image_log {
+ .nav_prin {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     text-align: right;
+ }
+
+
+ .img_log {
      width: 100px;
      margin: 10px 0px 10px 0px;
 
@@ -30,9 +41,10 @@
 
  }
 
+ .button_search {
+     border: none;
 
- nav {
-     text-align: right;
+
  }
 
  .ul_nav {
@@ -51,12 +63,28 @@
  }
 
  nav a {
-     font-size: 13px;
+     font-size: 0.8rem;
+    
      text-decoration: none;
      color: #083d10;
  }
 
  nav a:hover {
+     color: #c78c19;
+ }
+
+ /* 
+
+
+ div a {
+     /*Esto esta siendo aplicado a los iconos de facebook e instagram de la barra de navegacion osea a la etiqueta <div> en donde se encuentra la etiqueta <a>*/
+ /* text-decoration: none;
+     color: #083d10;
+ } 
+ */
+
+ div a:hover {
+     /*Esta siendo aplicada en la etiqueta <a> que esta dentro del contendor <div> donde estan los iconos de la barra de navegación Fc e Ig*/
      color: #c78c19;
  }
 
@@ -67,16 +95,8 @@
 
  }
 
- div a {
-     /*Esto esta siendo aplicado a los iconos de facebook e instagram de la barra de navegacion osea a la etiqueta <div> en donde se encuentra la etiqueta <a>*/
-     text-decoration: none;
-     color: #083d10;
- }
 
- div a:hover {
-     /*Esta siendo aplicada en la etiqueta <a> que esta dentro del contendor <div> donde estan los iconos de la barra de navegación Fc e Ig*/
-     color: #c78c19;
- }
+
 
  /*Main-index*/
 
@@ -87,19 +107,21 @@
      font-size: 50px;
      margin: 10px 5px 0px;
      text-align: center;
+    
+
 
  }
 
  .div_articule {
 
-    display: grid;
-    grid-template-columns: 300px 300px 200px;
-    
+     display: grid;
+     grid-template-columns: 300px 300px 200px;
+
 
 
      /* display: flex;
      justify-content:center;
-     align-items: center;     
+     align-items: center;
      flex-wrap: wrap;
     */
 
@@ -107,7 +129,7 @@
 
  }
 
- 
+
  /* @keyframes wipe-in-up {
     from {
       clip-path: inset(100% 0 0 0);
@@ -115,11 +137,11 @@
     to {
       clip-path: inset(0 0 0 0);
     } */
-  /* } */
-  
-  [transition-style="in:wipe:up"] {
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
-  }
+ /* } */
+
+ [transition-style="in:wipe:up"] {
+     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+ }
 
  .main_articule {
      width: 250px;
@@ -127,7 +149,8 @@
      padding: 2px;
      /* border: #083d10 solid 2px; */
      border-radius: 10px;
-    
+
+
 
  }
 
@@ -146,61 +169,77 @@
      margin: 20px
  }
 
-/*animaciones y transiciones*/
-.main_articule:hover{
-    /* transition-property: opacity, left, top, height;
+ /*animaciones y transiciones*/
+ /* .main_articule:hover {
+     /* transition-property: opacity, left, top, height;
     transition-duration: 3s, 5s;
-    transform: rotate(0.5turn); */
-}
-
-/* Medidas responsivas */
-
-@media (min-width: 900px) and (max-width: 1100px) {
-    nav a{
-    font-size: 15px;
-}
-}
+    transform: rotate(0.5turn);} */
 
 
-@media only screen and (max-width:850px){
- 
-/* Index/Nav */
+ /* Medidas responsivas */
+
+ @media (min-width: 900px) and (max-width: 1100px) {}
 
 
-/* Index/Main */
- .div_articule {
+ @media only screen and (max-width:850px) {
 
-    display: grid;
-    grid-template-columns: 300px 300px;
-}
-}
+     /* Index/Nav */
+     header {
+         display: flex;
+         justify-content: space-around;
+         align-items: normal;
+         width: 100%;
+     }
+
+     .nav_prin {
+
+         flex-direction: column;
 
 
-@media (min-width: 300px) and (max-width: 570px) {
-    /* Estilos a aplicar cuando la pantalla tiene un ancho entre 300px y 570px */
-    
-    .div_articule {
 
-        display: grid;
-        grid-template-columns: 300px 
+     }
 
-}
-  }
 
-  /* 
-@media (max-width: 400px) {
-    /* Estilos a aplicar cuando la pantalla es menor a 600px de ancho */
+     .search {
+        float: right;
+        text-align: right;
+        
+     }
 
-    /* .div_articule {
+     .input_search{
+        width: 100px;
+     }
 
-        display: grid;
-        grid-template-columns: 300px ;
-    }
-}
-  
-  
-  @media (min-width: 901px) {
-    /* Estilos a aplicar cuando la pantalla tiene un ancho mayor a 901px */
-  /* }
-   */ 
-/*Medidas responsivas*/
+     .boxiconsFcIg {
+         display: none;
+     }
+
+     
+
+
+     /* Index/Main */
+     .div_articule {
+
+         display: grid;
+         grid-template-columns: 300px 300px;
+     }
+
+     /* section/main/index */
+     .carousel{
+        display: none;
+     }
+ }
+
+
+ @media (min-width: 300px) and (max-width: 570px) {
+
+     /* Estilos a aplicar cuando la pantalla tiene un ancho entre 300px y 570px */
+
+     .div_articule {
+
+         display: grid;
+         grid-template-columns: 300px
+     }
+
+
+ }
