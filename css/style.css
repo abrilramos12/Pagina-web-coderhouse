@@ -32,7 +32,7 @@
 
  }
 
- .input_search {
+ .input_search { /*Buscar*/
      width: 150px;
      margin: 17px;
      border-radius: 5px;
@@ -105,9 +105,60 @@
 
  /*Main-index*/
 
+/*Productos destacados*/
+.section-salient{ 
+    background-color: #369344;
+    width: 100%;
+    height: 100%;
+    
+}
+.title-salient{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #f5efef;
+}
+.div-product{
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
 
 
 
+.div-image{
+   display: flex;
+    flex-direction: column;
+    
+   
+    background-color: #f8f4f4;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    
+    padding-left: 1px;
+    border-radius: 10px;
+}
+.image-produc{
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.button-buy{
+    width: 70px;
+    margin: 7px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #369344;
+    color: #f1f1f1;
+    text-align: center;
+}
 
 
 
