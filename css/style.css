@@ -203,10 +203,50 @@
 
  /*Control de plagas urbanas y rurales*/
 
- .image-pests{
-    width: 350px;
-    margin: 20px;
+ .section-pests{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.1fr;
  }
+
+ .image-pests{
+    width: 400px;
+    margin: 20px;
+    border-radius: 2px;
+    grid-column: 1;
+    grid-row: 1/2;
+ }
+ .title-pests{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 10px 0px 10px 2px;
+    font-size: 2.6rem;
+    text-align:center;
+    color: #369344;
+    
+ }
+
+ .paragraph-pests{
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 0.7rem;
+    text-align: justify;
+    margin: 10px 15px 0px 5px
+ }
+
+ .button-cost{/*Boton de ver contizacion*/
+   grid-column: 1/2;
+   grid-row: 2 ;
+   width: 100px; 
+   border-radius: 20px;
+    border: #083d10 solid 1px;
+    color: #083d10;
+    font-size: 0.9rem;
+    padding: 5px;
+    margin: 0px 400px;
+    text-align: center;
+}
+
 
 
  /* quienes somos */
