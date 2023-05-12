@@ -190,7 +190,7 @@
  section a{ /*Esto aplica a el boton ver mas productos*/
     width: 100%;
     text-align: center;
-    margin: 50px 400px;
+    margin: 0px 300px 50px 400px ;
  }
 
  section a button{
@@ -199,6 +199,8 @@
     color: #083d10;
     font-size: 0.9rem;
     padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
  }
 
  /*Control de plagas urbanas y rurales*/
@@ -243,11 +245,47 @@
     color: #083d10;
     font-size: 0.9rem;
     padding: 5px;
-    margin: 0px 400px;
+    margin: 0px 300px 20px 400px ;
     text-align: center;
 }
 
+/*Seccion novedades*/
 
+.secction-new{
+    background-color: #908f8f;
+    display: grid;
+    grid-template-columns:  repeat(2,1fr);
+    grid-template-rows: 1fr;
+}
+.title-new{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.subtitle-new{
+    font-size: 1rem;
+    margin: 20px 0px 10px 10px;
+    text-align: center;
+    color: white;
+}
+
+.paragraph-new{
+    font-size: 0.85rem;
+    margin: 25px 5px 0px 20px;
+    text-align: justify;
+    color: white ;
+}
+
+.image-new{
+    width: 400px;
+    margin: 20px 0px 0px 10px;
+    padding: 10px;
+    grid-template-columns: 2;
+   border-radius: 20px;
+    
+}
 
  /* quienes somos */
  /* Main */
