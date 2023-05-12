@@ -21,8 +21,8 @@
  .nav_prin {
      display: flex;
      justify-content: space-between;
-     align-items: center;
-     text-align: right;
+     align-items: stretch;
+
  }
 
 
@@ -64,13 +64,18 @@
 
  nav a {
      font-size: 0.8rem;
-    
+
      text-decoration: none;
      color: #083d10;
  }
 
  nav a:hover {
      color: #c78c19;
+ }
+
+ .boxiconsFcIg {
+
+     text-align: left;
  }
 
  /* 
@@ -102,78 +107,103 @@
 
 
 
- .main-title {
-     /*Titulo principal del main*/
-     font-size: 50px;
-     margin: 10px 5px 0px;
-     text-align: center;
-    
 
 
- }
 
- .div_articule {
+
+ /* quienes somos */
+ /* Main */
+ .section-mainqs { 
+
 
      display: grid;
-     grid-template-columns: 300px 300px 200px;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto auto auto;
+     grid-gap: 10px;
+     grid-column-gap: 130px;
+ }
 
+ .main-h2 {
+     font-weight: bolder;
+     padding: 10px;
+ }
 
+ .div1 {
+     grid-column: 1 / span 2;
+     text-align: center;
+     margin-top: 40px;
+     margin-bottom: 20px;
+     font-weight: 700;
+     font-size: 1.5rem;
+     text-decoration-line: underline;
+ }
 
-     /* display: flex;
-     justify-content:center;
-     align-items: center;
-     flex-wrap: wrap;
-    */
+ .div2 {
+     grid-row: 2;
+     grid-column: 2;
+     padding: 20px;
+     margin-left: 20px;
+ }
 
+ .div3 {
+     grid-row: 2;
+     grid-column: 1;
+     width: 200px;
+     margin-left: 40px;
+     padding: 10px;
+ }
 
+ .div4 {
+     grid-row: 4;
+     grid-column: 1;
+     margin-left: 40px;
+     padding: 10px;
+ }
+
+ .div5 {
+     grid-row: 5;
+     grid-column: 1;
+     margin-left: 40px;
+     padding: 10px;
+ }
+
+ .img_log-qs {
+     width: 200px;
 
  }
 
-
- /* @keyframes wipe-in-up {
-    from {
-      clip-path: inset(100% 0 0 0);
-    }
-    to {
-      clip-path: inset(0 0 0 0);
-    } */
- /* } */
-
- [transition-style="in:wipe:up"] {
-     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
- }
-
- .main_articule {
-     width: 250px;
-     margin: 10px 0px 0px 40px;
-     padding: 2px;
-     /* border: #083d10 solid 2px; */
-     border-radius: 10px;
-
-
-
- }
-
- .image-business {
-     /*imagen del negocio*/
-     width: 100%;
-     height: 350px;
-     border-radius: 3px;
+ .image-nursery {
+     width: 300px;
+     border-radius: 5px;
      background-color: #f5efef;
      /* Cambia este valor por el color que desees */
      box-shadow: 3px 3px 7px#040404;
      /* Establece el sombreado */
  }
 
- .articule-paragraph {
-     margin: 20px
+ .paragraph {
+     width: 500px;
  }
 
- /*animaciones y transiciones*/
- /* .main_articule:hover {
-     /* transition-property: opacity, left, top, height;
-    transition-duration: 3s, 5s;
-    transform: rotate(0.5turn);} */
+
+ .banner {
+     /*caracteristicas para hacer un banner */
+     height: 200px;
+     /* ajusta la altura a tu gusto */
+     background-color: #f1f1f1;
+     /* color de fondo por defecto */
+     background-image: url('../Imagenes/banner2.jpg');
+     background-size: cover;
+     /*hace que la imagen de fondo se ajuste de manera proporcional al tamaño del contenedor y cubra todo el área del mismo sin deformar la imagen. */
+     background-position: center;
+     position: relative;
+ }
+
+ .banner img {
+     display: none;
+     /* oculta la imagen para que solo se muestre el fondo */
+ }
+
 
 
  /* Medidas responsivas */
@@ -201,20 +231,20 @@
 
 
      .search {
-        float: right;
-        text-align: right;
-        
+         float: right;
+         text-align: right;
+
      }
 
-     .input_search{
-        width: 100px;
+     .input_search {
+         width: 100px;
      }
 
      .boxiconsFcIg {
          display: none;
      }
 
-     
+
 
 
      /* Index/Main */
@@ -225,9 +255,22 @@
      }
 
      /* section/main/index */
-     .carousel{
-        display: none;
+     .carousel {
+         display: none;
      }
+
+
+     .div1 {
+         text-align: start;
+         padding: 20px;
+
+     }
+
+     .div2 {
+         display: none;
+     }
+
+
  }
 
 
